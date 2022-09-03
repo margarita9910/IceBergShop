@@ -127,11 +127,11 @@
   <data name="paleta-de-hielo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\paleta-de-hielo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cerrar-sesion" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cerrar-sesion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="quitar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quitar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="jugo-de-fresa" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\jugo-de-fresa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="borrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\borrar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="reporte-de-negocios" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\reporte-de-negocios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -145,6 +145,12 @@
   <data name="security" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\security.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="acceso" xml:space="preserve">
+    <value />
+  </data>
+  <data name="helado (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\helado (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="host" xml:space="preserve">
     <value>localhost</value>
   </data>
@@ -153,6 +159,9 @@
   </data>
   <data name="fresa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fresa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2612467" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2612467.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="turno" xml:space="preserve">
     <value>1</value>
@@ -163,11 +172,11 @@
   <data name="vendedor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vendedor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="acceso" xml:space="preserve">
-    <value />
+  <data name="frappuccino" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\frappuccino.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="helado (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\helado (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="jugo-de-fresa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jugo-de-fresa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="helado (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\helado (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -184,10 +193,10 @@
   <data name="parfait" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\parfait.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="frappuccino" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\frappuccino.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cerrar-sesion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cerrar-sesion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="2612467" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2612467.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="editar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\editar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

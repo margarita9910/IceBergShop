@@ -30,14 +30,6 @@ Partial Class Usuarios
         Me.lblMinimize = New System.Windows.Forms.LinkLabel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.dgvUsuarios = New System.Windows.Forms.DataGridView()
-        Me.idUsuario = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.username = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.pass = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Sucursal = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Acceso = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Editar = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.Borrar = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.gpbEdicion = New System.Windows.Forms.GroupBox()
         Me.btnCancelar = New System.Windows.Forms.Button()
         Me.btnOk = New System.Windows.Forms.Button()
@@ -52,6 +44,14 @@ Partial Class Usuarios
         Me.txtUsername = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.txtNombre = New System.Windows.Forms.TextBox()
+        Me.idUsuario = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.username = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.pass = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Sucursal = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Acceso = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Editar = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.Borrar = New System.Windows.Forms.DataGridViewImageColumn()
         CType(Me.dgvUsuarios, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.gpbEdicion.SuspendLayout()
         Me.GroupBox5.SuspendLayout()
@@ -140,68 +140,6 @@ Partial Class Usuarios
         Me.dgvUsuarios.RowHeadersVisible = False
         Me.dgvUsuarios.Size = New System.Drawing.Size(815, 460)
         Me.dgvUsuarios.TabIndex = 16
-        '
-        'idUsuario
-        '
-        Me.idUsuario.Frozen = True
-        Me.idUsuario.HeaderText = "ID"
-        Me.idUsuario.Name = "idUsuario"
-        Me.idUsuario.ReadOnly = True
-        Me.idUsuario.Width = 30
-        '
-        'nombre
-        '
-        Me.nombre.Frozen = True
-        Me.nombre.HeaderText = "Nombre completo"
-        Me.nombre.Name = "nombre"
-        Me.nombre.ReadOnly = True
-        Me.nombre.Width = 170
-        '
-        'username
-        '
-        Me.username.Frozen = True
-        Me.username.HeaderText = "Nombre de usuario"
-        Me.username.Name = "username"
-        Me.username.ReadOnly = True
-        Me.username.Width = 120
-        '
-        'pass
-        '
-        Me.pass.Frozen = True
-        Me.pass.HeaderText = "Contraseña"
-        Me.pass.Name = "pass"
-        Me.pass.ReadOnly = True
-        '
-        'Sucursal
-        '
-        Me.Sucursal.Frozen = True
-        Me.Sucursal.HeaderText = "Sucursal"
-        Me.Sucursal.Name = "Sucursal"
-        Me.Sucursal.ReadOnly = True
-        Me.Sucursal.Width = 180
-        '
-        'Acceso
-        '
-        Me.Acceso.Frozen = True
-        Me.Acceso.HeaderText = "Acceso"
-        Me.Acceso.Name = "Acceso"
-        Me.Acceso.Width = 70
-        '
-        'Editar
-        '
-        Me.Editar.Frozen = True
-        Me.Editar.HeaderText = "Editar"
-        Me.Editar.Name = "Editar"
-        Me.Editar.ReadOnly = True
-        Me.Editar.Width = 60
-        '
-        'Borrar
-        '
-        Me.Borrar.Frozen = True
-        Me.Borrar.HeaderText = "Borrar"
-        Me.Borrar.Name = "Borrar"
-        Me.Borrar.ReadOnly = True
-        Me.Borrar.Width = 60
         '
         'gpbEdicion
         '
@@ -372,6 +310,74 @@ Partial Class Usuarios
         Me.txtNombre.Size = New System.Drawing.Size(313, 26)
         Me.txtNombre.TabIndex = 0
         '
+        'idUsuario
+        '
+        Me.idUsuario.Frozen = True
+        Me.idUsuario.HeaderText = "ID"
+        Me.idUsuario.Name = "idUsuario"
+        Me.idUsuario.ReadOnly = True
+        Me.idUsuario.Width = 30
+        '
+        'nombre
+        '
+        Me.nombre.Frozen = True
+        Me.nombre.HeaderText = "Nombre completo"
+        Me.nombre.Name = "nombre"
+        Me.nombre.ReadOnly = True
+        Me.nombre.Width = 170
+        '
+        'username
+        '
+        Me.username.Frozen = True
+        Me.username.HeaderText = "Nombre de usuario"
+        Me.username.Name = "username"
+        Me.username.ReadOnly = True
+        Me.username.Width = 120
+        '
+        'pass
+        '
+        Me.pass.Frozen = True
+        Me.pass.HeaderText = "Contraseña"
+        Me.pass.Name = "pass"
+        Me.pass.ReadOnly = True
+        '
+        'Sucursal
+        '
+        Me.Sucursal.Frozen = True
+        Me.Sucursal.HeaderText = "Sucursal"
+        Me.Sucursal.Name = "Sucursal"
+        Me.Sucursal.ReadOnly = True
+        Me.Sucursal.Width = 180
+        '
+        'Acceso
+        '
+        Me.Acceso.Frozen = True
+        Me.Acceso.HeaderText = "Acceso"
+        Me.Acceso.Name = "Acceso"
+        Me.Acceso.Width = 70
+        '
+        'Editar
+        '
+        Me.Editar.Frozen = True
+        Me.Editar.HeaderText = "Editar"
+        Me.Editar.Image = Global.IceBerg.My.Resources.Resources.editar
+        Me.Editar.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
+        Me.Editar.Name = "Editar"
+        Me.Editar.ReadOnly = True
+        Me.Editar.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Editar.Width = 60
+        '
+        'Borrar
+        '
+        Me.Borrar.Frozen = True
+        Me.Borrar.HeaderText = "Borrar"
+        Me.Borrar.Image = Global.IceBerg.My.Resources.Resources.borrar
+        Me.Borrar.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
+        Me.Borrar.Name = "Borrar"
+        Me.Borrar.ReadOnly = True
+        Me.Borrar.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Borrar.Width = 60
+        '
         'Usuarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -406,14 +412,6 @@ Partial Class Usuarios
     Friend WithEvents lblMinimize As LinkLabel
     Friend WithEvents Label1 As Label
     Friend WithEvents dgvUsuarios As DataGridView
-    Friend WithEvents idUsuario As DataGridViewTextBoxColumn
-    Friend WithEvents nombre As DataGridViewTextBoxColumn
-    Friend WithEvents username As DataGridViewTextBoxColumn
-    Friend WithEvents pass As DataGridViewTextBoxColumn
-    Friend WithEvents Sucursal As DataGridViewTextBoxColumn
-    Friend WithEvents Acceso As DataGridViewTextBoxColumn
-    Friend WithEvents Editar As DataGridViewButtonColumn
-    Friend WithEvents Borrar As DataGridViewButtonColumn
     Friend WithEvents gpbEdicion As GroupBox
     Friend WithEvents GroupBox5 As GroupBox
     Friend WithEvents GroupBox4 As GroupBox
@@ -428,4 +426,12 @@ Partial Class Usuarios
     Friend WithEvents txtSucursal As ComboBox
     Friend WithEvents btnGenerar As Button
     Friend WithEvents btnCancelar As Button
+    Friend WithEvents idUsuario As DataGridViewTextBoxColumn
+    Friend WithEvents nombre As DataGridViewTextBoxColumn
+    Friend WithEvents username As DataGridViewTextBoxColumn
+    Friend WithEvents pass As DataGridViewTextBoxColumn
+    Friend WithEvents Sucursal As DataGridViewTextBoxColumn
+    Friend WithEvents Acceso As DataGridViewTextBoxColumn
+    Friend WithEvents Editar As DataGridViewImageColumn
+    Friend WithEvents Borrar As DataGridViewImageColumn
 End Class

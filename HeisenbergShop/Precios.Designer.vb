@@ -28,10 +28,6 @@ Partial Class Precios
         Me.lblClose = New System.Windows.Forms.Label()
         Me.lblMinimize = New System.Windows.Forms.LinkLabel()
         Me.dgvProductos = New System.Windows.Forms.DataGridView()
-        Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.descripcion = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.precio = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.editar = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.pctBoxHelados = New System.Windows.Forms.PictureBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.btnCancelar = New System.Windows.Forms.Button()
@@ -40,6 +36,10 @@ Partial Class Precios
         Me.lblPrecio = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.descripcion = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.precio = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.editar = New System.Windows.Forms.DataGridViewImageColumn()
         CType(Me.dgvProductos, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pctBoxHelados, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -111,33 +111,6 @@ Partial Class Precios
         Me.dgvProductos.ReadOnly = True
         Me.dgvProductos.Size = New System.Drawing.Size(484, 516)
         Me.dgvProductos.TabIndex = 19
-        '
-        'ID
-        '
-        Me.ID.HeaderText = "ID"
-        Me.ID.Name = "ID"
-        Me.ID.ReadOnly = True
-        Me.ID.Width = 50
-        '
-        'descripcion
-        '
-        Me.descripcion.HeaderText = "Descripción"
-        Me.descripcion.Name = "descripcion"
-        Me.descripcion.ReadOnly = True
-        Me.descripcion.Width = 200
-        '
-        'precio
-        '
-        Me.precio.HeaderText = "Precio"
-        Me.precio.Name = "precio"
-        Me.precio.ReadOnly = True
-        '
-        'editar
-        '
-        Me.editar.HeaderText = "Editar"
-        Me.editar.Name = "editar"
-        Me.editar.ReadOnly = True
-        Me.editar.Width = 80
         '
         'pctBoxHelados
         '
@@ -235,6 +208,36 @@ Partial Class Precios
         Me.Label2.TabIndex = 22
         Me.Label2.Text = "Precio actual      $"
         '
+        'ID
+        '
+        Me.ID.HeaderText = "ID"
+        Me.ID.Name = "ID"
+        Me.ID.ReadOnly = True
+        Me.ID.Width = 50
+        '
+        'descripcion
+        '
+        Me.descripcion.HeaderText = "Descripción"
+        Me.descripcion.Name = "descripcion"
+        Me.descripcion.ReadOnly = True
+        Me.descripcion.Width = 200
+        '
+        'precio
+        '
+        Me.precio.HeaderText = "Precio"
+        Me.precio.Name = "precio"
+        Me.precio.ReadOnly = True
+        '
+        'editar
+        '
+        Me.editar.HeaderText = "Editar"
+        Me.editar.Image = Global.IceBerg.My.Resources.Resources.editar
+        Me.editar.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
+        Me.editar.Name = "editar"
+        Me.editar.ReadOnly = True
+        Me.editar.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.editar.Width = 80
+        '
         'Precios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -262,10 +265,6 @@ Partial Class Precios
     Friend WithEvents lblClose As Label
     Friend WithEvents lblMinimize As LinkLabel
     Friend WithEvents dgvProductos As DataGridView
-    Friend WithEvents ID As DataGridViewTextBoxColumn
-    Friend WithEvents descripcion As DataGridViewTextBoxColumn
-    Friend WithEvents precio As DataGridViewTextBoxColumn
-    Friend WithEvents editar As DataGridViewButtonColumn
     Friend WithEvents pctBoxHelados As PictureBox
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents txtPrecio As TextBox
@@ -274,4 +273,8 @@ Partial Class Precios
     Friend WithEvents Label2 As Label
     Friend WithEvents btnCancelar As Button
     Friend WithEvents btnGuardar As Button
+    Friend WithEvents ID As DataGridViewTextBoxColumn
+    Friend WithEvents descripcion As DataGridViewTextBoxColumn
+    Friend WithEvents precio As DataGridViewTextBoxColumn
+    Friend WithEvents editar As DataGridViewImageColumn
 End Class

@@ -25,7 +25,6 @@ Partial Class Panel
         Me.components = New System.ComponentModel.Container()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.lblClose = New System.Windows.Forms.Label()
         Me.lblMinimize = New System.Windows.Forms.LinkLabel()
         Me.gpbNieve = New System.Windows.Forms.GroupBox()
@@ -66,11 +65,6 @@ Partial Class Panel
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.gpTicket = New System.Windows.Forms.GroupBox()
         Me.tablaticket = New System.Windows.Forms.DataGridView()
-        Me.QTY = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Detalles = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Total = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Quitar = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.Borrar = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.gbCaja = New System.Windows.Forms.GroupBox()
         Me.btnCancelar = New System.Windows.Forms.Button()
         Me.btnFinalizar = New System.Windows.Forms.Button()
@@ -94,6 +88,11 @@ Partial Class Panel
         Me.btnReporte = New System.Windows.Forms.Button()
         Me.btnCaja = New System.Windows.Forms.Button()
         Me.btnCerrar = New System.Windows.Forms.Button()
+        Me.QTY = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Detalles = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Total = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Quitar = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.Borrar = New System.Windows.Forms.DataGridViewImageColumn()
         Me.gpbNieve.SuspendLayout()
         CType(Me.ptbNieve, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.gpbPaletas.SuspendLayout()
@@ -152,7 +151,7 @@ Partial Class Panel
         Me.gpbNieve.Controls.Add(Me.btnNSencilla)
         Me.gpbNieve.Controls.Add(Me.ptbNieve)
         Me.gpbNieve.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.gpbNieve.Font = New System.Drawing.Font("Noto Sans", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gpbNieve.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gpbNieve.ForeColor = System.Drawing.Color.White
         Me.gpbNieve.Location = New System.Drawing.Point(12, 27)
         Me.gpbNieve.Margin = New System.Windows.Forms.Padding(3, 80, 3, 3)
@@ -167,7 +166,7 @@ Partial Class Panel
         '
         Me.btnNImporte.BackColor = System.Drawing.Color.SteelBlue
         Me.btnNImporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnNImporte.Font = New System.Drawing.Font("Noto Sans", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnNImporte.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnNImporte.ForeColor = System.Drawing.Color.White
         Me.btnNImporte.Location = New System.Drawing.Point(57, 171)
         Me.btnNImporte.Name = "btnNImporte"
@@ -180,7 +179,7 @@ Partial Class Panel
         '
         Me.btnN5.BackColor = System.Drawing.Color.SteelBlue
         Me.btnN5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnN5.Font = New System.Drawing.Font("Noto Sans", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnN5.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnN5.ForeColor = System.Drawing.Color.White
         Me.btnN5.Location = New System.Drawing.Point(213, 124)
         Me.btnN5.Name = "btnN5"
@@ -193,7 +192,7 @@ Partial Class Panel
         '
         Me.btnN1.BackColor = System.Drawing.Color.SteelBlue
         Me.btnN1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnN1.Font = New System.Drawing.Font("Noto Sans", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnN1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnN1.ForeColor = System.Drawing.Color.White
         Me.btnN1.Location = New System.Drawing.Point(57, 124)
         Me.btnN1.Name = "btnN1"
@@ -206,7 +205,7 @@ Partial Class Panel
         '
         Me.btnN12.BackColor = System.Drawing.Color.SteelBlue
         Me.btnN12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnN12.Font = New System.Drawing.Font("Noto Sans", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnN12.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnN12.ForeColor = System.Drawing.Color.White
         Me.btnN12.Location = New System.Drawing.Point(213, 77)
         Me.btnN12.Name = "btnN12"
@@ -219,7 +218,7 @@ Partial Class Panel
         '
         Me.btnNTriple.BackColor = System.Drawing.Color.SteelBlue
         Me.btnNTriple.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnNTriple.Font = New System.Drawing.Font("Noto Sans", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnNTriple.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnNTriple.ForeColor = System.Drawing.Color.White
         Me.btnNTriple.Location = New System.Drawing.Point(57, 77)
         Me.btnNTriple.Name = "btnNTriple"
@@ -232,7 +231,7 @@ Partial Class Panel
         '
         Me.btnNDoble.BackColor = System.Drawing.Color.SteelBlue
         Me.btnNDoble.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnNDoble.Font = New System.Drawing.Font("Noto Sans", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnNDoble.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnNDoble.ForeColor = System.Drawing.Color.White
         Me.btnNDoble.Location = New System.Drawing.Point(213, 30)
         Me.btnNDoble.Name = "btnNDoble"
@@ -245,7 +244,7 @@ Partial Class Panel
         '
         Me.btnNSencilla.BackColor = System.Drawing.Color.SteelBlue
         Me.btnNSencilla.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnNSencilla.Font = New System.Drawing.Font("Noto Sans", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnNSencilla.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnNSencilla.ForeColor = System.Drawing.Color.White
         Me.btnNSencilla.Location = New System.Drawing.Point(57, 30)
         Me.btnNSencilla.Name = "btnNSencilla"
@@ -272,7 +271,7 @@ Partial Class Panel
         Me.gpbPaletas.Controls.Add(Me.btnPFrut)
         Me.gpbPaletas.Controls.Add(Me.ptbPaleta)
         Me.gpbPaletas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.gpbPaletas.Font = New System.Drawing.Font("Noto Sans", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gpbPaletas.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gpbPaletas.ForeColor = System.Drawing.Color.White
         Me.gpbPaletas.Location = New System.Drawing.Point(12, 275)
         Me.gpbPaletas.Margin = New System.Windows.Forms.Padding(3, 80, 3, 3)
@@ -287,7 +286,7 @@ Partial Class Panel
         '
         Me.btnPEspecial.BackColor = System.Drawing.Color.SteelBlue
         Me.btnPEspecial.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnPEspecial.Font = New System.Drawing.Font("Noto Sans", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnPEspecial.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnPEspecial.ForeColor = System.Drawing.Color.White
         Me.btnPEspecial.Location = New System.Drawing.Point(130, 133)
         Me.btnPEspecial.Name = "btnPEspecial"
@@ -300,7 +299,7 @@ Partial Class Panel
         '
         Me.btnPCrema.BackColor = System.Drawing.Color.SteelBlue
         Me.btnPCrema.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnPCrema.Font = New System.Drawing.Font("Noto Sans", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnPCrema.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnPCrema.ForeColor = System.Drawing.Color.White
         Me.btnPCrema.Location = New System.Drawing.Point(130, 76)
         Me.btnPCrema.Name = "btnPCrema"
@@ -313,7 +312,7 @@ Partial Class Panel
         '
         Me.btnPFrut.BackColor = System.Drawing.Color.SteelBlue
         Me.btnPFrut.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnPFrut.Font = New System.Drawing.Font("Noto Sans", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnPFrut.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnPFrut.ForeColor = System.Drawing.Color.White
         Me.btnPFrut.Location = New System.Drawing.Point(130, 19)
         Me.btnPFrut.Name = "btnPFrut"
@@ -339,7 +338,7 @@ Partial Class Panel
         Me.gpbFrap.Controls.Add(Me.btnFChico)
         Me.gpbFrap.Controls.Add(Me.PictureBox1)
         Me.gpbFrap.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.gpbFrap.Font = New System.Drawing.Font("Noto Sans", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gpbFrap.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gpbFrap.ForeColor = System.Drawing.Color.White
         Me.gpbFrap.Location = New System.Drawing.Point(12, 469)
         Me.gpbFrap.Margin = New System.Windows.Forms.Padding(3, 80, 3, 3)
@@ -354,7 +353,7 @@ Partial Class Panel
         '
         Me.btnFGrande.BackColor = System.Drawing.Color.SteelBlue
         Me.btnFGrande.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnFGrande.Font = New System.Drawing.Font("Noto Sans", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnFGrande.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnFGrande.ForeColor = System.Drawing.Color.White
         Me.btnFGrande.Location = New System.Drawing.Point(216, 58)
         Me.btnFGrande.Name = "btnFGrande"
@@ -367,7 +366,7 @@ Partial Class Panel
         '
         Me.btnFChico.BackColor = System.Drawing.Color.SteelBlue
         Me.btnFChico.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnFChico.Font = New System.Drawing.Font("Noto Sans", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnFChico.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnFChico.ForeColor = System.Drawing.Color.White
         Me.btnFChico.Location = New System.Drawing.Point(60, 58)
         Me.btnFChico.Name = "btnFChico"
@@ -394,7 +393,7 @@ Partial Class Panel
         Me.gpbChaska.Controls.Add(Me.btnCChica)
         Me.gpbChaska.Controls.Add(Me.ptbChaska)
         Me.gpbChaska.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.gpbChaska.Font = New System.Drawing.Font("Noto Sans", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gpbChaska.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gpbChaska.ForeColor = System.Drawing.Color.White
         Me.gpbChaska.Location = New System.Drawing.Point(12, 596)
         Me.gpbChaska.Margin = New System.Windows.Forms.Padding(3, 80, 3, 3)
@@ -409,7 +408,7 @@ Partial Class Panel
         '
         Me.btnCExtra.BackColor = System.Drawing.Color.SteelBlue
         Me.btnCExtra.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCExtra.Font = New System.Drawing.Font("Noto Sans", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCExtra.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCExtra.ForeColor = System.Drawing.Color.White
         Me.btnCExtra.Location = New System.Drawing.Point(249, 77)
         Me.btnCExtra.Name = "btnCExtra"
@@ -422,7 +421,7 @@ Partial Class Panel
         '
         Me.btnCGrande.BackColor = System.Drawing.Color.SteelBlue
         Me.btnCGrande.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCGrande.Font = New System.Drawing.Font("Noto Sans", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCGrande.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCGrande.ForeColor = System.Drawing.Color.White
         Me.btnCGrande.Location = New System.Drawing.Point(127, 77)
         Me.btnCGrande.Name = "btnCGrande"
@@ -435,7 +434,7 @@ Partial Class Panel
         '
         Me.btnCChica.BackColor = System.Drawing.Color.SteelBlue
         Me.btnCChica.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCChica.Font = New System.Drawing.Font("Noto Sans", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCChica.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCChica.ForeColor = System.Drawing.Color.White
         Me.btnCChica.Location = New System.Drawing.Point(9, 77)
         Me.btnCChica.Name = "btnCChica"
@@ -461,7 +460,7 @@ Partial Class Panel
         Me.gpbAgua.Controls.Add(Me.btnAChica)
         Me.gpbAgua.Controls.Add(Me.pbAgua)
         Me.gpbAgua.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.gpbAgua.Font = New System.Drawing.Font("Noto Sans", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gpbAgua.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gpbAgua.ForeColor = System.Drawing.Color.White
         Me.gpbAgua.Location = New System.Drawing.Point(401, 27)
         Me.gpbAgua.Margin = New System.Windows.Forms.Padding(3, 80, 3, 3)
@@ -476,7 +475,7 @@ Partial Class Panel
         '
         Me.btnAGrande.BackColor = System.Drawing.Color.SteelBlue
         Me.btnAGrande.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAGrande.Font = New System.Drawing.Font("Noto Sans", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAGrande.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAGrande.ForeColor = System.Drawing.Color.White
         Me.btnAGrande.Location = New System.Drawing.Point(127, 83)
         Me.btnAGrande.Name = "btnAGrande"
@@ -489,7 +488,7 @@ Partial Class Panel
         '
         Me.btnAChica.BackColor = System.Drawing.Color.SteelBlue
         Me.btnAChica.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAChica.Font = New System.Drawing.Font("Noto Sans", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAChica.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAChica.ForeColor = System.Drawing.Color.White
         Me.btnAChica.Location = New System.Drawing.Point(127, 21)
         Me.btnAChica.Name = "btnAChica"
@@ -515,7 +514,7 @@ Partial Class Panel
         Me.gbItaliana.Controls.Add(Me.btnIChica)
         Me.gbItaliana.Controls.Add(Me.PictureBox2)
         Me.gbItaliana.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.gbItaliana.Font = New System.Drawing.Font("Noto Sans", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gbItaliana.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gbItaliana.ForeColor = System.Drawing.Color.White
         Me.gbItaliana.Location = New System.Drawing.Point(401, 225)
         Me.gbItaliana.Margin = New System.Windows.Forms.Padding(3, 80, 3, 3)
@@ -530,7 +529,7 @@ Partial Class Panel
         '
         Me.btnIGrande.BackColor = System.Drawing.Color.SteelBlue
         Me.btnIGrande.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnIGrande.Font = New System.Drawing.Font("Noto Sans", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnIGrande.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnIGrande.ForeColor = System.Drawing.Color.White
         Me.btnIGrande.Location = New System.Drawing.Point(127, 83)
         Me.btnIGrande.Name = "btnIGrande"
@@ -543,7 +542,7 @@ Partial Class Panel
         '
         Me.btnIChica.BackColor = System.Drawing.Color.SteelBlue
         Me.btnIChica.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnIChica.Font = New System.Drawing.Font("Noto Sans", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnIChica.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnIChica.ForeColor = System.Drawing.Color.White
         Me.btnIChica.Location = New System.Drawing.Point(127, 21)
         Me.btnIChica.Name = "btnIChica"
@@ -570,7 +569,7 @@ Partial Class Panel
         Me.gbSnacks.Controls.Add(Me.btnSSolos)
         Me.gbSnacks.Controls.Add(Me.PictureBox3)
         Me.gbSnacks.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.gbSnacks.Font = New System.Drawing.Font("Noto Sans", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gbSnacks.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gbSnacks.ForeColor = System.Drawing.Color.White
         Me.gbSnacks.Location = New System.Drawing.Point(401, 409)
         Me.gbSnacks.Margin = New System.Windows.Forms.Padding(3, 80, 3, 3)
@@ -585,7 +584,7 @@ Partial Class Panel
         '
         Me.btnSExtra.BackColor = System.Drawing.Color.SteelBlue
         Me.btnSExtra.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSExtra.Font = New System.Drawing.Font("Noto Sans", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSExtra.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSExtra.ForeColor = System.Drawing.Color.White
         Me.btnSExtra.Location = New System.Drawing.Point(249, 82)
         Me.btnSExtra.Name = "btnSExtra"
@@ -598,7 +597,7 @@ Partial Class Panel
         '
         Me.btnSNormal.BackColor = System.Drawing.Color.SteelBlue
         Me.btnSNormal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSNormal.Font = New System.Drawing.Font("Noto Sans", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSNormal.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSNormal.ForeColor = System.Drawing.Color.White
         Me.btnSNormal.Location = New System.Drawing.Point(127, 82)
         Me.btnSNormal.Name = "btnSNormal"
@@ -611,7 +610,7 @@ Partial Class Panel
         '
         Me.btnSSolos.BackColor = System.Drawing.Color.SteelBlue
         Me.btnSSolos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSSolos.Font = New System.Drawing.Font("Noto Sans", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSSolos.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSSolos.ForeColor = System.Drawing.Color.White
         Me.btnSSolos.Location = New System.Drawing.Point(9, 82)
         Me.btnSSolos.Name = "btnSSolos"
@@ -635,7 +634,7 @@ Partial Class Panel
         '
         Me.gpTicket.Controls.Add(Me.tablaticket)
         Me.gpTicket.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.gpTicket.Font = New System.Drawing.Font("Noto Sans", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gpTicket.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gpTicket.ForeColor = System.Drawing.Color.White
         Me.gpTicket.Location = New System.Drawing.Point(785, 47)
         Me.gpTicket.Margin = New System.Windows.Forms.Padding(3, 80, 3, 3)
@@ -656,61 +655,18 @@ Partial Class Panel
         Me.tablaticket.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.tablaticket.BackgroundColor = System.Drawing.Color.White
         Me.tablaticket.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Noto Sans", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.tablaticket.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.tablaticket.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.tablaticket.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.QTY, Me.Detalles, Me.Total, Me.Quitar, Me.Borrar})
         Me.tablaticket.Location = New System.Drawing.Point(6, 21)
         Me.tablaticket.Name = "tablaticket"
         Me.tablaticket.ReadOnly = True
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Noto Sans", 12.0!)
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black
-        Me.tablaticket.RowsDefaultCellStyle = DataGridViewCellStyle3
-        Me.tablaticket.RowTemplate.DefaultCellStyle.Font = New System.Drawing.Font("Noto Sans", 12.0!)
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black
+        Me.tablaticket.RowsDefaultCellStyle = DataGridViewCellStyle2
+        Me.tablaticket.RowTemplate.DefaultCellStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.tablaticket.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black
         Me.tablaticket.Size = New System.Drawing.Size(451, 447)
         Me.tablaticket.TabIndex = 0
-        '
-        'QTY
-        '
-        Me.QTY.HeaderText = "QTY"
-        Me.QTY.Name = "QTY"
-        Me.QTY.ReadOnly = True
-        Me.QTY.Width = 40
-        '
-        'Detalles
-        '
-        Me.Detalles.HeaderText = "Detalles"
-        Me.Detalles.Name = "Detalles"
-        Me.Detalles.ReadOnly = True
-        Me.Detalles.Width = 200
-        '
-        'Total
-        '
-        Me.Total.HeaderText = "Total"
-        Me.Total.Name = "Total"
-        Me.Total.ReadOnly = True
-        Me.Total.Width = 80
-        '
-        'Quitar
-        '
-        Me.Quitar.HeaderText = "Quitar"
-        Me.Quitar.Name = "Quitar"
-        Me.Quitar.ReadOnly = True
-        Me.Quitar.Width = 40
-        '
-        'Borrar
-        '
-        Me.Borrar.HeaderText = "Borrar"
-        Me.Borrar.Name = "Borrar"
-        Me.Borrar.ReadOnly = True
-        Me.Borrar.Width = 40
         '
         'gbCaja
         '
@@ -723,7 +679,7 @@ Partial Class Panel
         Me.gbCaja.Controls.Add(Me.lblTotal)
         Me.gbCaja.Controls.Add(Me.Label1)
         Me.gbCaja.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.gbCaja.Font = New System.Drawing.Font("Noto Sans", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gbCaja.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gbCaja.ForeColor = System.Drawing.Color.White
         Me.gbCaja.Location = New System.Drawing.Point(785, 522)
         Me.gbCaja.Margin = New System.Windows.Forms.Padding(3, 80, 3, 3)
@@ -761,10 +717,10 @@ Partial Class Panel
         'lblCambio
         '
         Me.lblCambio.AutoSize = True
-        Me.lblCambio.Font = New System.Drawing.Font("Noto Sans", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCambio.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCambio.Location = New System.Drawing.Point(383, 104)
         Me.lblCambio.Name = "lblCambio"
-        Me.lblCambio.Size = New System.Drawing.Size(60, 33)
+        Me.lblCambio.Size = New System.Drawing.Size(58, 29)
         Me.lblCambio.TabIndex = 6
         Me.lblCambio.Text = "0.00"
         Me.lblCambio.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -773,42 +729,42 @@ Partial Class Panel
         '
         Me.txtRecibo.BackColor = System.Drawing.SystemColors.Highlight
         Me.txtRecibo.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtRecibo.Font = New System.Drawing.Font("Noto Sans", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtRecibo.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtRecibo.ForeColor = System.Drawing.Color.White
         Me.txtRecibo.Location = New System.Drawing.Point(339, 72)
         Me.txtRecibo.Name = "txtRecibo"
         Me.txtRecibo.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.txtRecibo.Size = New System.Drawing.Size(101, 29)
+        Me.txtRecibo.Size = New System.Drawing.Size(101, 24)
         Me.txtRecibo.TabIndex = 5
         Me.txtRecibo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Noto Sans", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(17, 105)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(323, 26)
+        Me.Label2.Size = New System.Drawing.Size(318, 24)
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "CAMBIO:                                            $"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Noto Sans", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(17, 74)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(323, 26)
+        Me.Label3.Size = New System.Drawing.Size(319, 24)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "RECIBÍ:                                               $"
         '
         'lblTotal
         '
         Me.lblTotal.AutoSize = True
-        Me.lblTotal.Font = New System.Drawing.Font("Noto Sans", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTotal.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTotal.Location = New System.Drawing.Point(381, 36)
         Me.lblTotal.Name = "lblTotal"
-        Me.lblTotal.Size = New System.Drawing.Size(61, 33)
+        Me.lblTotal.Size = New System.Drawing.Size(62, 29)
         Me.lblTotal.TabIndex = 1
         Me.lblTotal.Text = "0.00"
         Me.lblTotal.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -816,10 +772,10 @@ Partial Class Panel
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Noto Sans", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(16, 36)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(330, 33)
+        Me.Label1.Size = New System.Drawing.Size(370, 29)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "TOTAL:                                    $"
         '
@@ -861,7 +817,7 @@ Partial Class Panel
         Me.GroupBox1.Controls.Add(Me.btnFSolas)
         Me.GroupBox1.Controls.Add(Me.PictureBox4)
         Me.GroupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.GroupBox1.Font = New System.Drawing.Font("Noto Sans", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.Color.White
         Me.GroupBox1.Location = New System.Drawing.Point(401, 596)
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 80, 3, 3)
@@ -876,7 +832,7 @@ Partial Class Panel
         '
         Me.btnFTriples.BackColor = System.Drawing.Color.SteelBlue
         Me.btnFTriples.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnFTriples.Font = New System.Drawing.Font("Noto Sans", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnFTriples.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnFTriples.ForeColor = System.Drawing.Color.White
         Me.btnFTriples.Location = New System.Drawing.Point(249, 77)
         Me.btnFTriples.Name = "btnFTriples"
@@ -889,7 +845,7 @@ Partial Class Panel
         '
         Me.btnFDobles.BackColor = System.Drawing.Color.SteelBlue
         Me.btnFDobles.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnFDobles.Font = New System.Drawing.Font("Noto Sans", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnFDobles.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnFDobles.ForeColor = System.Drawing.Color.White
         Me.btnFDobles.Location = New System.Drawing.Point(127, 77)
         Me.btnFDobles.Name = "btnFDobles"
@@ -902,7 +858,7 @@ Partial Class Panel
         '
         Me.btnFSolas.BackColor = System.Drawing.Color.SteelBlue
         Me.btnFSolas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnFSolas.Font = New System.Drawing.Font("Noto Sans", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnFSolas.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnFSolas.ForeColor = System.Drawing.Color.White
         Me.btnFSolas.Location = New System.Drawing.Point(9, 77)
         Me.btnFSolas.Name = "btnFSolas"
@@ -1012,6 +968,46 @@ Partial Class Panel
         Me.ToolTip1.SetToolTip(Me.btnCerrar, "Cerrar sesión")
         Me.btnCerrar.UseVisualStyleBackColor = False
         '
+        'QTY
+        '
+        Me.QTY.HeaderText = "QTY"
+        Me.QTY.Name = "QTY"
+        Me.QTY.ReadOnly = True
+        Me.QTY.Width = 40
+        '
+        'Detalles
+        '
+        Me.Detalles.HeaderText = "Detalles"
+        Me.Detalles.Name = "Detalles"
+        Me.Detalles.ReadOnly = True
+        Me.Detalles.Width = 200
+        '
+        'Total
+        '
+        Me.Total.HeaderText = "Total"
+        Me.Total.Name = "Total"
+        Me.Total.ReadOnly = True
+        Me.Total.Width = 80
+        '
+        'Quitar
+        '
+        Me.Quitar.HeaderText = "Quitar"
+        Me.Quitar.Image = Global.IceBerg.My.Resources.Resources.quitar
+        Me.Quitar.Name = "Quitar"
+        Me.Quitar.ReadOnly = True
+        Me.Quitar.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Quitar.Width = 40
+        '
+        'Borrar
+        '
+        Me.Borrar.HeaderText = "Borrar"
+        Me.Borrar.Image = Global.IceBerg.My.Resources.Resources.borrar
+        Me.Borrar.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
+        Me.Borrar.Name = "Borrar"
+        Me.Borrar.ReadOnly = True
+        Me.Borrar.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Borrar.Width = 40
+        '
         'Panel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1094,11 +1090,6 @@ Partial Class Panel
     Friend WithEvents lblCambio As Label
     Friend WithEvents txtRecibo As TextBox
     Friend WithEvents tablaticket As DataGridView
-    Friend WithEvents QTY As DataGridViewTextBoxColumn
-    Friend WithEvents Detalles As DataGridViewTextBoxColumn
-    Friend WithEvents Total As DataGridViewTextBoxColumn
-    Friend WithEvents Quitar As DataGridViewButtonColumn
-    Friend WithEvents Borrar As DataGridViewButtonColumn
     Friend WithEvents btnNImporte As Button
     Friend WithEvents btnN5 As Button
     Friend WithEvents btnN1 As Button
@@ -1137,4 +1128,9 @@ Partial Class Panel
     Friend WithEvents btnReporte As Button
     Friend WithEvents btnCaja As Button
     Friend WithEvents btnCerrar As Button
+    Friend WithEvents QTY As DataGridViewTextBoxColumn
+    Friend WithEvents Detalles As DataGridViewTextBoxColumn
+    Friend WithEvents Total As DataGridViewTextBoxColumn
+    Friend WithEvents Quitar As DataGridViewImageColumn
+    Friend WithEvents Borrar As DataGridViewImageColumn
 End Class
